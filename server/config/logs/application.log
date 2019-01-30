@@ -1,0 +1,8 @@
+[2019-01-29T19:08:17.598] [ERROR] application - POST /user/signup? - 14ms
+[2019-01-29T19:08:18.928] [ERROR] application - POST /user/signup? - 4ms
+[2019-01-29T19:11:00.185] [ERROR] application - { SyntaxError: Unexpected token 
+ in JSON at position 34
+    at JSON.parse (<anonymous>)
+    at parse (/Users/shanks/Desktop/shanksv1-back-end/node_modules/_co-body@4.2.0@co-body/lib/json.js:57:17)
+    at /Users/shanks/Desktop/shanksv1-back-end/node_modules/_co-body@4.2.0@co-body/lib/json.js:41:16
+    at process.internalTickCallback (internal/process/next_tick.js:77:7) status: 400, body: '{\n"nickname": "sd",\n"password":"sd\n}' }
