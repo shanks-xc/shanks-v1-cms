@@ -11,14 +11,21 @@ const FormItem = Form.Item;
 class Login extends React.Component {
   handleSubmit = e => {
     e.preventDefault ();
-    axios.post ('/user/signin', {
-      username: this.props.form.getFieldValue ('username'),
-      password: this.props.form.getFieldValue ('password'),
-    });
-    this.props.form.validateFields ((err, values) => {
+    this.props.form.validateFields (async (err, values) => {
       if (!err) {
-        store.dispatch (changeAuthen (true));
-        this.props.history.push ('/');
+        let res = await axios.post ('/user/signin', {
+          username: this.props.form.getFieldValue ('username'),
+          password: this.props.form.getFieldValue ('password'),
+        });
+        console.log (res);
+        if (res.data.code === 200) {
+          store.dispatch (changeAuthen (true));
+          this.props.history.push ('/');
+        } else {
+          alert (
+            '注册接口:http://localhost:8888/user/signup,参数分别是:nickname,username,password'
+          );
+        }
       }
     });
   };
