@@ -67,3 +67,4 @@ export default withRouter(MyComponent);
 "quill-image-drop-module": "^1.0.3",
 "react-quill": "^1.1.0",
 ```
+11
