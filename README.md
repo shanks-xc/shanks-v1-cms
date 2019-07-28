@@ -1,4 +1,4 @@
-## 项目  背景
+## 背景
 
 - 为学习 react 以及 koa2,衍生出来的一个后台 cms
 - 目前进度,前端部分页面基本确定->后端接口权限控制以及参数验证完成->等待有空再联调
@@ -67,4 +67,5 @@ export default withRouter(MyComponent);
 "quill-image-drop-module": "^1.0.3",
 "react-quill": "^1.1.0",
 ```
-11
+![image.png](https://upload-images.jianshu.io/upload_images/18311127-b015f8976f6a5b8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/18311127-3de322ec461184da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
